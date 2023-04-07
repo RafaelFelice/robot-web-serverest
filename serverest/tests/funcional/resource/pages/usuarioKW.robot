@@ -31,6 +31,7 @@ Quando insiro os dados faker
     Click Element                    locator=${CB_ADM}
     Wait Until Element Is Visible    locator=${BTN_CADASTRAR}
     Click Element                    locator=${BTN_CADASTRAR}
+    
 Quando insiro os dados:
     [Arguments]    ${NAME}    ${EMAIL}    ${PASSWORD}
     Wait Until Element Is Visible    locator=${NOME_USUARIO}
