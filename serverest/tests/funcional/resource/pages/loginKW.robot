@@ -16,8 +16,11 @@ Dado que estou na page login
 
 Quando insiro os dados:
     [Arguments]    ${EMAIL}    ${PASSWORD}
+    Wait Until Element Is Visible    locator=${EMAIL_LOGIN}
     Input Text                       locator=${EMAIL_LOGIN}       text=${EMAIL}
+    Wait Until Element Is Visible    locator=${PASSWORD_LOGIN}
     Input Text                       locator=${PASSWORD_LOGIN}       text=${PASSWORD}
+    Wait Until Element Is Visible    locator=${BTN_ENTRAR}
     Click Element                    locator=${BTN_ENTRAR}        
 
 Então deve retornar mensagem "${MSG}"
