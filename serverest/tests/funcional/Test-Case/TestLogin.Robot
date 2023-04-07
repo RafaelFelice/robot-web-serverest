@@ -2,7 +2,7 @@
 Documentation   Casos de testes para validar a funcionalidade de login na página login
 Resource        ../resource/base.robot
 Resource        ../resource/pages/loginKW.robot
-Default Tags    @login
+Default Tags    @regressivo
 
 Test Setup      Abrir browser
 Test Teardown   Fechar browser

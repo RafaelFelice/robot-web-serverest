@@ -1,5 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
+Library     FakerLibrary
 
 *** Variables ***
 ${BASE_URL}                             https://front.serverest.dev
