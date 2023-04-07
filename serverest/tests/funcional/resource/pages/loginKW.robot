@@ -1,5 +1,5 @@
 *** Settings ***        
-Library         SeleniumLibrary
+Resource    ../base.robot
 
 *** Variables ***
 ${URL}                      https://front.serverest.dev/login

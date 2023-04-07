@@ -1,8 +1,8 @@
 *** Settings ***
-Documentation   Casos de testes para validar as funcionalidades da página cadastrar usuários
+Documentation   Casos de testes para validar a funcionalidade cadastrar usuário na página cadastrar usuários
 Resource        ../resource/base.robot
 Resource        ../resource/pages/usuarioKW.robot
-Default Tags      @usuario
+Default Tags      @regressivo
 
 Test Setup      Abrir browser
 Test Teardown   Fechar browser
@@ -10,7 +10,7 @@ Test Teardown   Fechar browser
 ***Test Cases***
 Cenário 1: Cadastrar usuário administrador com sucesso
     Dado que estou na page cadastrar usuarios
-    Quando insiro os dados:    Rafael    teste@qa.com.br    teste123
+    Quando insiro os dados faker
     Então deve retornar mensagem "Cadastro realizado com sucesso"
 
 Cenário 2: Cadastrar usuário já existente
