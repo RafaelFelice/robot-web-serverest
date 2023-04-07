@@ -18,10 +18,15 @@ Dado que estou na page cadastrar usuarios
 
 Quando insiro os dados:
     [Arguments]    ${NAME}    ${EMAIL}    ${PASSWORD}
+    Wait Until Element Is Visible    locator=${NOME_USUARIO}
     Input Text                       locator=${NOME_USUARIO}        text=${NAME}
+    Wait Until Element Is Visible    locator=${EMAIL_USUARIO}
     Input Text                       locator=${EMAIL_USUARIO}       text=${EMAIL}
+    Wait Until Element Is Visible    locator=${SENHA_USUARIO}
     Input Text                       locator=${SENHA_USUARIO}       text=${PASSWORD}
+    Wait Until Element Is Visible    locator=${CB_ADM}
     Click Element                    locator=${CB_ADM}
+    Wait Until Element Is Visible    locator=${BTN_CADASTRAR}
     Click Element                    locator=${BTN_CADASTRAR}
     
 Então deve retornar mensagem "${MSG}"
